@@ -1,0 +1,18 @@
+Program sluzi za detekciju ivica na slikama koristeci 3 razlicita algoritma.
+
+Ulazni podatak je slika koja se mora nalaziti u folderu 'images', dok se rezultat slike smesta u folder 'results' kao 4 razlicite slike.
+
+Program koristiti putem main.ipynb (jupyter).
+
+poziv: %run edgeDetection picture_name brightness_level canny_sigma
+
+primer: %run edgeDetection picture4.jpg 0.6 4
+	    %run edgeDetection picture5.jpg 1 10 
+		
+rezultati:
+
+0grayScale.jpg   -  crno-bela slika koja se koristi kao ulaz za Sobel-ov algoritam
+1canny.jpg       -  rezultat poziva canny funkcije iz paketa 'skimage' 		
+2roberts.jpg     -  rezultat poziva roberts fuynkcije iz paketa 'skimage'
+3sobelBasic.jpg  -  rezultat moje implementacije Sobel-ovog algoritma
+4scipySobel.jpg  -  rezultat uz pomoc Sobel-ovog algoritma iz 'scipy' paketa 
